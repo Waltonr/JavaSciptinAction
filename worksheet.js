@@ -101,5 +101,26 @@
 // }
 
 // Boss Fight 
-
+let magicNumber = 50
+let guess = 0
+while(guess == false){
+    let response = prompt('What is the magic number?')
+        if (response < magicNumber){
+            console.log('Too low!');
+        }
+        else if (response > magicNumber){
+            console.log('Too High!');
+        }
+        else if (response <= 49 && response >= 40){
+            console.log('Getting Warmer!');
+        }
+        else if (response <= 59 && response >= 51){
+            console.log('Getting Warmer!');
+        }
+        else {
+            response == magicNumber;
+            console.log('Congrats!')
+            guess = true;
+        }
+}
 
